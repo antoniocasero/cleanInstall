@@ -31,7 +31,7 @@ echo "Oh my shell"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 echo "Brew packages"
-for pkg in zsh zsh-completions fzf swiftlint azk carthage rmv openssl git-lfs cmake repo ccache mono doxygen; do
+for pkg in zsh zsh-completions fzf swiftlint ack carthage openssl git-lfs cmake repo ccache mono doxygen mackup z; do
   if brew list -1 | grep -q "^${pkg}\$"; then
       echo "Package '$pkg' is installed"
   else
@@ -41,8 +41,8 @@ done
 
 git lfs install
 
-echo "Brew packages"
-for pkg in alfred dropbox google-chrome vlc fastlane spotify go2shell docker ngrok spotify visual-studio-code sourcetree box-sync bettertouchtool; do
+echo "Brew cask packages"
+for pkg in alfred dropbox google-chrome vlc fastlane spotify go2shell docker ngrok visual-studio-code sourcetree box-sync bettertouchtool iterm2; do
   if brew cask list -1 | grep -q "^${pkg}\$"; then
       echo "Package '$pkg' is installed"
   else
@@ -65,7 +65,7 @@ else
   rvm install $(RUBY_VERSION)
   rvm --default $(RUBY_VERSION)
   echo "Ruby installation"
-  rmv use $(RUBY_VERSION)
+  rvm use $(RUBY_VERSION)
 fi
 
 
@@ -83,3 +83,13 @@ done
 
 # Show compiling time in xcode
 defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool YES
+
+# Restore default configurations
+mackuop restore
+
+# Install fonts for Oh-my-zsh
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
