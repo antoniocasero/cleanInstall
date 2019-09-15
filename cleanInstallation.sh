@@ -87,11 +87,4 @@ defaults write com.apple.dt.Xcode ShowBuildOperationDuration -bool YES
 # Restore default configurations
 mackuop restore
 
-# Install fonts for Oh-my-zsh
-git clone https://github.com/powerline/fonts.git
-cd fonts
-./install.sh
-cd ..
-rm -rf fonts
 
-ccache -M 100
