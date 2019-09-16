@@ -24,6 +24,8 @@ brew 'fzf'
 brew 'swiftlint'
 brew 'swiftformat'
 brew 'z'
+brew 'topgrade'
+brew 'htop'
 
 # Development
 brew 'git-lfs'
