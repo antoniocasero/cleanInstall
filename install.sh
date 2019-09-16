@@ -18,6 +18,8 @@ echo "Oh my shell"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
+# Install plugins
+
 
 # Install global NPM packages
 npm install --global yarn
@@ -29,6 +31,13 @@ mkdir $HOME/Sites
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
+source .
+
+#Install ZSH plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 
 
 # Install fonts for Oh-my-zsh

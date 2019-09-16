@@ -26,6 +26,8 @@ brew 'swiftformat'
 brew 'z'
 brew 'topgrade'
 brew 'htop'
+brew 'cheat' # Cheatsheet of any command
+brew 'TomAnthony/brews/itermocil' # Create special configuration to iterm
 
 # Development
 brew 'git-lfs'
@@ -33,7 +35,7 @@ brew 'carthage'
 brew 'cmake'
 brew 'repo'
 brew 'ccache'
-brew 'openssl' 
+brew 'openssl'
 
 # Apps
 cask 'aerial'

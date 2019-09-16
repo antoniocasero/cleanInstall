@@ -18,9 +18,10 @@ else
             ;;
     esac
 fi
-ANDROID_BUILD_TOOLS_VERSION=$(ls $ANDROID_SDK_ROOT/build-tools | tail -n1)
-export PATH=$ANDROID_SDK_ROOT/emulator:$PATH
 
+ANDROID_BUILD_TOOLS_VERSION=$(ls $ANDROID_SDK_ROOT/build-tools | tail -n1)
+
+export PATH=$ANDROID_SDK_ROOT/emulator:$PATH
 export NDK_ROOT=$ANDROID_SDK_ROOT/ndk-bundle
 export ANDROID_HOME=$ANDROID_SDK_ROOT
 export PATH=$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/tools/proguard/bin:$ANDROID_SDK_ROOT/build-tools/$ANDROID_BUILD_TOOLS_VERSION:$NDK_ROOT:$PATH
