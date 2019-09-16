@@ -26,14 +26,13 @@ plugins=(
     git
     z
     brew
-    zsh-autosuggestions
     zsh-syntax-highlighting
 )
 
 # Enable oh-my.
 source $ZSH/oh-my-zsh.sh
 
-
+# Load files
 source "$DOTFILES/aliases.zsh"
 source "$DOTFILES/functions.zsh"
 source "$DOTFILES/exports.zsh"
