@@ -17,18 +17,15 @@ function openx(){
   fi
 }
 
-
 function lines() {
    local find="find . '(' -name '*.m' -or -name '*.mm' -or -name '*.cpp' -or -name '*.swift' ')' -not -path './$1/*' -print0 | xargs -0 wc -l | sort"
    echo $find
    sh -c $find;
 }
 
-
 function opengit() {
     open $1 -a /Applications/Sourcetree.app
 }
-
 
 function creategitreview() {
     touch .gitreview

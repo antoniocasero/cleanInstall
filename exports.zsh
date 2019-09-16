@@ -8,6 +8,3 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/lib/ccache:$PATH"
 export OPENSSL_ROOT_DIR=/usr/local/Cellar/openssl/1.0.2m
-
-##CMAKE
-export PATH="/Applications/CMake.app/Contents/bin":"$PATH"

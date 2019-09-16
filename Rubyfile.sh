@@ -18,11 +18,7 @@ fi
 
 source .
 
-echo "Gem packages"
-for pkg in cocoapods xcode-install xcpretty; do
-  if gem list $pkg -1; then
-      echo "Package '$pkg' is installed"
-  else
-      gem install $pkg
-  fi
-done
+echo "Gem packages:"
+
+gem install cocoapods
+gem install xcpretty
