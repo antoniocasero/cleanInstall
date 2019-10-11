@@ -35,7 +35,7 @@ function creategitreview() {
     project=$1
     defaultbranch=master
     defaultremote=origin
-    defaultrebase=0" > .gitreviewgit
+    defaultrebase=0" > .gitreview
 }
 
 function venv() {

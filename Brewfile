@@ -26,6 +26,7 @@ brew 'swiftformat'
 brew 'z'
 brew 'topgrade'
 brew 'htop'
+brew 'task' # Todo list cli (task add...)
 brew 'cheat' # Cheatsheet of any command
 brew 'TomAnthony/brews/itermocil' # Create special configuration to iterm
 
@@ -66,6 +67,11 @@ cask 'transmit'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 
+# Android
+cask 'adoptopenjdk8'
+cask 'android-sdk'
+cask 'android-studio'
+
 # Quicklook
 cask 'qlcolorcode'
 cask 'qlmarkdown'
@@ -83,14 +89,14 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-mas '1Password', id: 1333542190
-mas 'Byword', id: 420212497
-mas 'Giphy Capture', id: 668208984
-mas 'Keynote', id: 409183694
-mas 'Sip', id: 507257563
-mas 'Spark', id: 1176895641
-mas 'The Unarchiver', id: 425424353
-mas 'Things', id: 904280696
-mas 'Tweetbot', id: 1384080005
-mas 'Unsplash', id: 1284863847
-mas 'WhatsApp', id: 1147396723 
+# mas '1Password', id: 1333542190
+# mas 'Byword', id: 420212497
+# mas 'Giphy Capture', id: 668208984
+# mas 'Keynote', id: 409183694
+# mas 'Sip', id: 507257563
+# mas 'Spark', id: 1176895641
+# mas 'The Unarchiver', id: 425424353
+# mas 'Things', id: 904280696
+# mas 'Tweetbot', id: 1384080005
+# mas 'Unsplash', id: 1284863847
+# mas 'WhatsApp', id: 1147396723
