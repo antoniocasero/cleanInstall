@@ -4,6 +4,7 @@ tap 'caskroom/eid'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'AdoptOpenJDK/openjdk'
 
 # Binaries
 brew 'ack'
@@ -73,7 +74,7 @@ cask 'intellij-idea-ce'
 
 # Android
 cask 'adoptopenjdk8'
-cask 'android-sdk'
+cask 'android-ndk'
 cask 'android-studio'
 
 # Quicklook
