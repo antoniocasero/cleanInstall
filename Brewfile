@@ -37,6 +37,8 @@ brew 'cmake'
 brew 'repo'
 brew 'ccache'
 brew 'openssl'
+# JIRA
+brew 'atlassian-cli'
 
 # Apps
 cask 'aerial'
@@ -66,6 +68,8 @@ cask 'tor-browser'
 cask 'transmit'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
+cask 'db-browser-for-sqlite'
+cask 'intellij-idea-ce'
 
 # Android
 cask 'adoptopenjdk8'
@@ -80,23 +84,4 @@ cask 'quicklook-csv'
 cask 'qlstephen'
 
 # Fonts
-cask 'font-lato'
-cask 'font-open-sans'
-cask 'font-roboto'
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
-
-# Mac App Store
-# mas '1Password', id: 1333542190
-# mas 'Byword', id: 420212497
-# mas 'Giphy Capture', id: 668208984
-# mas 'Keynote', id: 409183694
-# mas 'Sip', id: 507257563
-# mas 'Spark', id: 1176895641
-# mas 'The Unarchiver', id: 425424353
-# mas 'Things', id: 904280696
-# mas 'Tweetbot', id: 1384080005
-# mas 'Unsplash', id: 1284863847
-# mas 'WhatsApp', id: 1147396723
+cask 'font-meslo-for-powerline'

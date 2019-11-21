@@ -2,6 +2,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export CCACHE_BASEDIR="/Users/antoniocasero/Documents/sparta"
 export CCACHE_MEMCACHED_CONF="--SERVER=apigen-memcached.ad.here.com"
 export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:$PATH"
 export PATH="$PATH:$HOME/bin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH="$HOME/.fastlane/bin:$PATH"
@@ -13,3 +14,6 @@ export CHEAT_COLORS=true
 export CHEAT_COLORSCHEME=light
 # ssh key path
 export SSH_KEY_PATH="~/.ssh/rsa_id"
+
+# Atlassian CLI tool
+export COLUMNS=$COLUMNS

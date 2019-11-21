@@ -3,11 +3,13 @@
 alias snippets="code ~/Box\ Sync/Snippets/"
 alias zshrc="code ~/.zshrc"
 alias reload="source ~/.zshrc"
+alias size="du -sh"
 
 # Dev
 alias dd='cd ~/Library/Developer/Xcode/DerivedData/'
 alias clang-format-all="find . -name \"*.cpp\" -o -name \"*.hpp\"  | sed 's| |\\ |g' | xargs clang-format -i"
-alias iot-x86="HERESDK_MODULE_CONFIG=\"routing\" ./cmake/scripts/configure-ios-simulator.cmake"
+alias iot-simulator="HERESDK_MODULE_CONFIG=\"routing\" ./sdk/cmake/scripts/configure-ios-simulator.cmake"
+alias iot-format="./sdk/cmake/scripts/apply_format.cmake"
 alias iot-android-cucumber-tests='./gradlew -PoverrideAbiFilters="x86_64" -PoverrideInstallOptions="" :cucumber:connectedDebugAndroidTest'
 alias iot-android-unit-tests='./gradlew -PoverrideAbiFilters="x86_64" -PoverrideInstallOptions="" :modules:connectedDebugAndroidTest'
 
@@ -48,6 +50,5 @@ unskip() {  git update-index --no-skip-worktree "$@";  git status; }
 gitclean() { pushd "$@"; git clean -xdf; popd; }
 
 #web
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222'i
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222'
 crat() { npx create-react-app $1 --typescript }
-

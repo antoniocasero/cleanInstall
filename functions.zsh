@@ -46,3 +46,17 @@ function venv() {
 
 #mkdir and cd
 function mkcd() { mkdir -p "$@" && cd "$_"; }
+
+function navi-generate() {
+  cmake -GXcode -DCMAKE_BUILD_TYPE=Debug \
+  -DCMAKE_EXPORT_COMPILE_COMMANDS=\"ON\" \
+  -DCMAKE_CXX_COMPILER="$(find_clang++)" \
+  -DCMAKE_C_COMPILER="$(find_clang)" \
+  -DCMAKE_USE_CCACHE=1 \
+  -DOPENSSL_INCLUDE_DIR=/usr/local/Cellar/openssl/1.0.2t/include \
+  -DOPENSSL_CRYPTO_LIBRARY=/usr/local/Cellar/openssl/1.0.2t/lib/libcrypto.dylib \
+  -DOPENSSL_SSL_LIBRARY=/usr/local/Cellar/openssl/1.0.2t/lib/libssl.dylib \
+  -DCMAKE_OSX_ARCHITECTURES=x86_64 \
+  -Wno-dev \
+  ..
+}
