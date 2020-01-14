@@ -71,6 +71,7 @@ cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'db-browser-for-sqlite'
 cask 'intellij-idea-ce'
+cask 'amazon-photos'
 
 # Android
 cask 'adoptopenjdk8'
