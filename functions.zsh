@@ -24,7 +24,7 @@ function lines() {
 }
 
 function opengit() {
-    open $1 -a /Applications/Sourcetree.app
+    open $1 -a /Applications/Sourcetree.app/Contents/MacOS/SourceTree
 }
 
 function creategitreview() {

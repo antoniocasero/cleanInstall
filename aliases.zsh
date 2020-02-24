@@ -9,8 +9,7 @@ alias size="du -sh"
 alias dd='cd ~/Library/Developer/Xcode/DerivedData/'
 alias clang-format-all="find . -name \"*.cpp\" -o -name \"*.hpp\"  | sed 's| |\\ |g' | xargs clang-format -i"
 alias clang-format-all-java="find . -name \"*.java\"  | sed 's| |\\ |g' | xargs clang-format -i -style=file"
-
-alias iot-simulator="HERESDK_MODULE_CONFIG=\"routing\" ./sdk/cmake/scripts/configure-ios-simulator.cmake"
+alias configure="HERESDK_MODULE_CONFIG=\"dev\" ./sdk/cmake/scripts/configure-ios-simulator.cmake"
 alias iot-format="./sdk/cmake/scripts/apply_format.cmake"
 alias iot-android-cucumber-tests='./gradlew -PoverrideAbiFilters="x86_64" -PoverrideInstallOptions="" :cucumber:connectedDebugAndroidTest'
 alias iot-android-unit-tests='./gradlew -PoverrideAbiFilters="x86_64" -PoverrideInstallOptions="" :modules:connectedDebugAndroidTest'
