@@ -16,6 +16,8 @@ export CHEAT_COLORSCHEME=light
 export SSH_KEY_PATH="~/.ssh/rsa_id"
 # Flutter
 export PATH="$HOME/Documents/flutter/bin:$PATH"
+# Path to your dotfiles.
+export DOTFILES=$HOME/.dotfiles
 
 # Atlassian CLI tool
 export COLUMNS=$COLUMNS

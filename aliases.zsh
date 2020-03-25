@@ -3,7 +3,7 @@
 alias snippets="code ~/Box\ Sync/Snippets/"
 alias zshrc="code ~/.zshrc"
 alias reload="source ~/.zshrc"
-alias size="du -sh"
+alias size="du -h * | sort -h"
 
 # Dev
 alias dd='cd ~/Library/Developer/Xcode/DerivedData/'

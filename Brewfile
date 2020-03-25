@@ -12,7 +12,6 @@ brew 'bash' # Latest Bash version
 brew 'bat' # "cat" on steroids
 brew 'coreutils' # Those that come with macOS are outdated
 brew 'git'
-brew 'grep'
 
 brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
@@ -38,21 +37,17 @@ brew 'cmake'
 brew 'repo'
 brew 'ccache'
 brew 'openssl'
+
 # JIRA
 brew 'atlassian-cli'
 
 # Apps
 cask 'aerial'
-cask 'alfred'
 cask 'caffeine'
-cask 'discord'
 cask 'docker'
 cask 'dropbox'
-cask 'eid-be'
-cask 'eid-be-viewer'
 cask 'firefox'
 cask 'github'
-cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'fastlane'
 cask 'spotify'
@@ -74,16 +69,13 @@ cask 'intellij-idea-ce'
 cask 'amazon-photos'
 
 # Android
-cask 'adoptopenjdk8'
+
+brew 'gradle'
+cask 'adoptopenjdk10'
 cask 'android-ndk'
 cask 'android-studio'
-
-# Quicklook
-cask 'qlcolorcode'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'quicklook-csv'
-cask 'qlstephen'
+// Mirror android devices
+brew 'scrcpy'
 
 # Fonts
 cask 'font-meslo-for-powerline'
